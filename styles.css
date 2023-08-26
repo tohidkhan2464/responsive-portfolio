@@ -11,7 +11,9 @@
   padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -34,10 +36,20 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(45deg,#215781, #165e96,#6961bc, #af62be,#c06c9d,#c36f7b,#bb6874);
+  background-image: linear-gradient(
+    45deg,
+    #215781,
+    #165e96,
+    #6961bc,
+    #af62be,
+    #c06c9d,
+    #c36f7b,
+    #bb6874
+  );
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -57,7 +69,7 @@ h2 {
 
 ul {
   list-style: none;
-  margin:1rem;
+  margin: 1rem;
 }
 
 a {
@@ -92,7 +104,6 @@ a {
   background: linear-gradient(45deg, #66bfbf, var(--main-white));
 }
 
-
 /* Welcome Section */
 .welcome-section {
   position: relative;
@@ -118,7 +129,7 @@ a {
   font-weight: normal;
 }
 
-.welcome-section h2:hover{
+.welcome-section h2:hover {
   text-shadow: 0 0 4px #03e9f4, 0 0 8px #03e9f4;
 }
 
@@ -140,7 +151,8 @@ a {
   justify-content: center;
   align-items: center;
   width: auto;
-  margin-bottom: 6rem;
+  margin: 5rem 5rem;
+  text-align: center;
 }
 .photo {
   border-radius: 50%;
@@ -178,7 +190,6 @@ a {
 
 .intro {
   margin: auto;
-  
 }
 
 hr {
@@ -187,7 +198,6 @@ hr {
   width: 50%;
   margin: 20px auto;
 }
-
 
 /* Skills Section  */
 .skills {
@@ -216,9 +226,8 @@ hr {
   font-family: "Times New Roman", Times, serif;
 }
 
-
 /* Work Experience Section  */
-#work{
+#work {
   padding-top: 9rem;
   margin-bottom: 7rem;
 }
@@ -249,119 +258,13 @@ hr {
 }
 .experience {
   display: flex;
-  margin-top: -5px;
+  margin: 20px 20px;
   padding: 15px 0px 0px 0px;
   justify-content: center;
 }
 
-.certificate > a {
-  font-size: 10px;
-  position: relative;
-  display: inline-block;
-  padding: 5px;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  overflow: hidden;
-  font-weight: 900;
-  border-radius: 5px;
-}
-
-.certificate > a:hover {
-  background: #03e9f4;
-  color: #050801;
-  box-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4,
-    0 0 40px #03e9f4;
-}
-
-.certificate > a span {
-  position: absolute;
-  display: block;
-}
-
-.certificate > a span:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: animate1 1s linear infinite;
-}
-
-@keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
-  }
-}
-
-.certificate > a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
-  0% {
-    top: -100%;
-  }
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-
-.certificate > a span:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-
-@keyframes animate3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
-}
-
-.certificate > a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-
-@keyframes animate4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-
 .experience ul li h1 {
-  transition: scale 400ms;
+  transition: scale 400ms ease-in-out;
   font-size: 4rem;
   margin: 0;
   padding: 0;
@@ -372,7 +275,6 @@ hr {
   color: #050801;
   text-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 20px #03e9f4;
 }
-
 
 /* Contact section */
 .contact-section {
@@ -448,13 +350,11 @@ hr {
   transform: rotateY(360deg);
 }
 
-
 /* Footer */
 .bottom-container {
   background-color: #66bfbf;
   clear: both;
   text-align: center;
-  
 }
 
 .copyright {
@@ -463,23 +363,30 @@ hr {
   padding: 10px 0;
 }
 
-
-@media (max-width: 75em) {
+@media (max-width: 85em) {
   html {
-    font-size: 55%;
+    font-size: 58%;
+  }
+}
+@media (max-width: 77em) {
+  html {
+    font-size: 54%;
+  }
+  .experience ul li h1 {
+    font-size: 3.4rem;
   }
 }
 
 @media (max-width: 61.25em) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
-  .profile h2{
+  .profile h2 {
     font-size: 8rem;
   }
 
-  .profile p{
+  .profile p {
     font-size: 4rem;
   }
   .skills > span {
@@ -490,6 +397,16 @@ hr {
   }
 }
 
+@media (max-width: 50em) {
+  .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
 
 @media (max-width: 38.25em) {
   html {
@@ -503,23 +420,22 @@ hr {
     margin: 0 1rem;
   }
 
-  .experience{
+  /* .experience{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
-  }
-  
+  } */
 }
 
 @media (max-width: 28.75em) {
-  html{
+  html {
     font-size: 25%;
   }
-  
-  .contact{
+
+  .contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -527,16 +443,16 @@ hr {
     justify-items: start;
   }
 
-  .skills{
+  .skills {
     padding: 4rem;
     margin: 3rem;
   }
 
-  .contact-section{
+  .contact-section {
     padding: 0;
   }
 
-  #work{
+  #work {
     width: 100%;
     padding: 3rem 0;
     margin: 0;
